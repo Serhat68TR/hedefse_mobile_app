@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="yellow">#FFFFEB3B</color>
+    <color name="purple">#FF9C27B0</color>
+
+        <color name="colorPrimary">#6200EE</color>
+        <color name="colorPrimaryDark">#3700B3</color>
+        <color name="colorAccent">#03DAC5</color>
+        <color name="colorBackground">#F8F8F8</color>
+        <color name="colorTextPrimary">#333333</color>
+        <color name="colorTextSecondary">#666666</color>
+
+        <color name="default_background">#FFFFFF</color>
+        <color name="red_background">#FB5162</color>
+        <color name="blue_background">#BBDEFB</color>
+    <color name="green_background">#67BA6A</color>
+    <color name="gray_background">#8A8A8A</color>
+    <color name="pink_background">#FD28F9</color>
+    <color name="orange_background">#D39657</color>
+
+    <color name="dark_red">#7BD058</color>
+    <color name="dark_blue">#7BD048</color>
+
+    <color name="selected_background_color">#FFCDD2</color> <!-- Seçili renk -->
+    <color name="default_background_color">#EB3D3D</color> <!-- Varsayılan arka plan rengi -->
+
+    <!-- Varsayılan Tema -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:windowBackground">@color/default_background</item> <!-- Arka plan rengi -->
+        </style>
+
+        <!-- Kırmızı Tema -->
+        <style name="AppTheme_Red" parent="Theme.AppCompat">
+            <item name="colorPrimary">@color/red</item>
+            <item name="colorPrimaryDark">@color/dark_red</item>
+            <item name="colorAccent">@color/white</item>
+            <item name="android:windowBackground">@color/red_background</item> <!-- Arka plan rengi -->
+        </style>
+
+        <!-- Mavi Tema -->
+        <style name="AppTheme_Blue" parent="Theme.AppCompat">
+            <item name="colorPrimary">@color/blue</item>
+            <item name="colorPrimaryDark">@color/dark_blue</item>
+            <item name="colorAccent">@color/white</item>
+            <item name="android:windowBackground">@color/blue_background</item> <!-- Arka plan rengi -->
+        </style>
+
+
+    <color name="theme_blue">#C1DEFA</color>
+    <color name="theme_red">#F69D99</color>
+    <color name="theme_green">#AEF4B2</color>
+    <color name="theme_yellow">#F2EF8C</color>
+    <color name="theme_purple">#D37FDB</color>
+    <color name="theme_pink">#F0C7EC</color>
+    <color name="theme_orange">#F8CB9A</color>
+    <color name="theme_gray">#E4E2E2</color>
+
+    <color name="theme_linear_blue">#5689DB</color>
+    <color name="theme_linear_red">#D16B6B</color>
+    <color name="theme_linear_green">#95E295</color>
+    <color name="theme_linear_yellow">#FFFAAD</color>
+    <color name="theme_linear_purple">#B37ED1</color>
+    <color name="theme_linear_pink">#BB8CE2</color>
+    <color name="theme_linear_orange">#E7B185</color>
+    <color name="theme_linear_gray">#CAC9C9</color>
+
+    <color name="theme_adapter_blue">#F7FBFF</color>
+    <color name="theme_adapter_red">#FBE9E7</color>
+    <color name="theme_adapter_green">#E8F5E9</color>
+    <color name="theme_adapter_yellow">#FFFDE7</color>
+    <color name="theme_adapter_purple">#F8F0FC</color>
+    <color name="theme_adapter_pink">#FFF3F6</color>
+    <color name="theme_adapter_orange">#FFF8E1</color>
+    <color name="theme_adapter_gray">#F5F5F5</color>
+
+    <color name="theme_tv_blue">#FFFFFF</color>
+    <color name="theme_tv_red">#FFFFFF</color>
+    <color name="theme_tv_green">#FFFFFF</color>
+    <color name="theme_tv_yellow">#000000</color>
+    <color name="theme_tv_purple">#FFFFFF</color>
+    <color name="theme_tv_pink">#FFFFFF</color>
+    <color name="theme_tv_orange">#FFFFFF</color>
+    <color name="theme_tv_gray">#FFFFFF</color>
+
+
+
+</resources>

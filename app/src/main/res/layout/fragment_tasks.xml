@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Fragments.TasksFragment">
+
+    <!-- Header LinearLayout -->
+    <LinearLayout
+        android:id="@+id/tasks_linear_tasksHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/theme_linear_blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tasks_rv_tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Tasks Title TextView -->
+        <TextView
+            android:id="@+id/tasks_tv_tasksTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GÖREVLERİM"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <!-- Tasks RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasks_rv_tasks"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toTopOf="@+id/tasks_linear_filterButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_linear_tasksHeader" />
+
+    <!-- Filter Buttons LinearLayout -->
+    <LinearLayout
+        android:id="@+id/tasks_linear_filterButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tasks_fab_addTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_rv_tasks">
+
+        <!-- Button for Pending Tasks -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tasks_btn_showPending"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#56B15A"
+            android:textSize="10dp"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginRight="5dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            android:text="Bekleyen Görevler" />
+
+        <!-- Button for Completed Tasks -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tasks_btn_showCompleted"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#838383"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/amaranth"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            android:elevation="5dp"
+            android:text="Tamamlanan Görevler" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tasks_btn_showExpired"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFA500"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/amaranth"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            android:elevation="5dp"
+            android:text="Süresi Dolmuş Görevler" />
+
+    </LinearLayout>
+
+    <!-- Add Task FloatingActionButton -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tasks_fab_addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="#8EC5E0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_linear_filterButtons"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#AFD7F2"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:elevation="4dp"
+    android:id="@+id/itemTasks_cv_cardView"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Task Title TextView -->
+        <TextView
+            android:id="@+id/itemTasks_tv_taskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Görev Başlığı"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- Completed CheckBox -->
+        <CheckBox
+            android:id="@+id/itemTasks_cb_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamamlandı"
+            android:buttonTint="#047A6E"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Creation Date TextView -->
+        <TextView
+            android:id="@+id/itemTask_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <!-- Arrow ImageView -->
+        <ImageView
+            android:id="@+id/itemTasks_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="Arrow"
+            android:src="@drawable/ic_arrow_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Start Date Label TextView -->
+        <TextView
+            android:id="@+id/itemTasks_tv_startDateLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Görev Başlangıç Tarihi :" />
+
+        <!-- Start Date TextView -->
+        <TextView
+            android:id="@+id/itemTasks_tv_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Başlangıç Tarihi"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- End Date Label TextView -->
+        <TextView
+            android:id="@+id/itemTasks_tv_endDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Görev Bitiş Tarihi :" />
+
+        <!-- End Date TextView -->
+        <TextView
+            android:id="@+id/itemTasks_tv_endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:text="Bitiş Tarihi"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

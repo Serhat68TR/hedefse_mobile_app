@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/border"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/notifi_tv_notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Bildirim Başlığı"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notifi_tv_notificationTime"
+        android:layout_width="wrap_content"
+        android:textColor="#6A6A6A"
+        android:layout_height="wrap_content"
+        android:text="Bildirim Zamanı" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/dialog_background_selection.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/dialogTS_tv_themeSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tema Seçiniz"
+        android:textColor="#000000"
+        android:layout_marginVertical="20dp"
+        android:textSize="16sp" />
+
+    <!-- RadioGroup for background theme selection -->
+    <RadioGroup
+        android:id="@+id/dialogTS_rg_themeSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Default Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialogTS_btn_rb_themeDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Varsayılan" />
+
+        <!-- Red Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialogTS_rb_themeRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kırmızı" />
+
+        <!-- Blue Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialogTS_rb_themeBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mavi" />
+
+        <!-- Green Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialogTS_rb_themeGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeşil" />
+
+        <!-- Gray Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialogTS_rb_themeGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gri" />
+
+        <!-- Pink Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialog_rb_themePink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembe" />
+
+        <!-- Orange Theme RadioButton -->
+        <RadioButton
+            android:id="@+id/dialogTS_rb_themeOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turuncu" />
+    </RadioGroup>
+</LinearLayout>

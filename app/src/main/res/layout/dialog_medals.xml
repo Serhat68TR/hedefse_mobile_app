@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/dialogMed_tv_awardsBadgesInfo"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Madalyalar ve Rozetler Hakkında"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Medal 1 -->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/dialogMed_iv_award1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/award"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/dialogMed_tv_award1Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="500 görev yada 2000 pomodoro döngüsü tamamlandığında alınır.\nSizi diğerlerinden ayıran en üst düzey derecelendirme madalyası, zirve sizin!" />
+            </LinearLayout>
+
+            <!-- Medal 2 -->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/dialogMed_iv_award2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/quality"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/dialogMed_tv_award2Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="300 görev yada 1500 pomodoro döngüsü tamamlandığında alınır.\nBu madalyayı almaya hak kazandıysanız tebrikler, hayallerinize çok yakınsınız!" />
+            </LinearLayout>
+
+            <!-- Medal 3 -->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/dialogMed_iv_award3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/gold_medal"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/dialogMed_tv_award3Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="150 görev yada 300 pomodoro döngüsü tamamlandığında alınır." />
+            </LinearLayout>
+
+            <!-- Medal 4 -->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/dialogMed_iv_award4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/silvermedal"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/dialogMed_tv_award4Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="50 görev yada 150 pomodoro döngüsü tamamlandığında alınır." />
+            </LinearLayout>
+
+            <!-- Medal 5 -->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/dialogMed_iv_award5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/bronzemedal"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/dialogMed_tv_award5Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="30 görev yada 75 pomodoro döngüsü tamamlandığında alınır.\nBu madalyayı almaya hak kazandıysanız bir yola başlamışsınız demektir. Önemli olan şeyin devamlılık olduğunu unutmayınız." />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogMed_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#1C729B"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        android:text="Tamam"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

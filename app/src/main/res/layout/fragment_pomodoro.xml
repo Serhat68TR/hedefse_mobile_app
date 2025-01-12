@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.example.hedefse.viewmodel.PomodoroViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E05E5E"
+        android:orientation="vertical">
+
+        <!-- Title LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#C24545"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POMODORO"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Image Area LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pomodoro_iv_pomodoroImage"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="Pomodoro Image"
+                android:src="@drawable/pomodoro" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pomodoro_tv_howToUse"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Nasıl Kullanılır?"
+                    android:gravity="center_vertical"
+                    android:textColor="#97FA97"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/pomodoro_tv_pomodoroInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25 Dakika Çalışma - 5 Dakika Dinlenme olarak Kullanılmaktadır.\nBaşla butonuna basıldığında 25 Dakikalık süre başlar, Reset butonuna basıldığında ise sayaç sıfırlanır.\nDevam eden süreyi durdurup sonrasında kaldığınız yerden devam etmek istediğinizde durdur butonuna basılıp tekrar başlat'a basılmalıdır."
+                    android:textColor="#FFFAFA"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Cycle Count TextView -->
+        <TextView
+            android:id="@+id/pomodoro_tv_cycleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Döngü Sayısı: 0"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pomodoro_tv_timer"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="25:00"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amaranth"
+            android:textSize="60sp" />
+
+        <!-- Start/Pause Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pomodoro_btn_startPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="#4CAF50"
+            app:strokeColor="#E68C8C"
+            app:strokeWidth="2dp"
+            android:text="Başlat" />
+
+        <!-- Reset Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pomodoro_btn_reset"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="#B31E13"
+            app:strokeColor="#D7A0A0"
+            app:strokeWidth="2dp"
+            android:text="Reset" />
+
+        <!-- Skip Cycle Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pomodoro_btn_skipCycle"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="#FF9800"
+            app:strokeColor="#FFD54F"
+            app:strokeWidth="2dp"
+            android:text="Döngü Atla" />
+    </LinearLayout>
+</layout>

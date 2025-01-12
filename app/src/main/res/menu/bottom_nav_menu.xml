@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_tasks"
+        android:title="Görevler"
+        android:icon="@drawable/task"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_pomodoro"
+        android:icon="@drawable/pomodoro"
+        android:title="Pomodoro"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_success"
+        android:icon="@drawable/gold_medal"
+        android:title="Başarılarım"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/gear"
+        android:title="Ayarlar"
+        app:showAsAction="always" />
+</menu>

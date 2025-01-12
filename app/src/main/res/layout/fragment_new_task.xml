@@ -1,0 +1,158 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/newTask_tv_newTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_border"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="YENİ GÖREV OLUŞTUR"
+        android:textColor="#1C68A2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:letterSpacing="0.1"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_et_taskTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Task Title EditText -->
+    <EditText
+        android:id="@+id/newTask_et_taskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:hint="Görev Başlığı"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_et_taskDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_tv_newTaskTitle" />
+
+    <!-- Task Description EditText -->
+    <EditText
+        android:id="@+id/newTask_et_taskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Görev Açıklaması"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_et_startDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_et_taskTitle" />
+
+    <!-- Start Date EditText -->
+    <EditText
+        android:id="@+id/newTask_et_startDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Başlangıç Tarihi"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_et_endDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_et_taskDescription" />
+
+    <!-- End Date EditText -->
+    <EditText
+        android:id="@+id/newTask_et_endDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Bitiş Tarihi"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_btn_saveTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_et_startDate" />
+
+    <!-- Save Task Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newTask_btn_saveTask"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="12dp"
+        android:text="Oluştur"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_btn_addNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_et_endDate"
+        app:backgroundTint="#4CAF50"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
+
+    <!-- Add Notification Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newTask_btn_addNotification"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#03A9F4"
+        android:padding="12dp"
+        android:text="Bildirim Oluştur"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/newTask_rv_notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_btn_saveTask"
+        app:strokeColor="#2C2B2A"
+        app:strokeWidth="2dp" />
+
+    <!-- Notifications RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newTask_rv_notifications"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTask_btn_addNotification" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
