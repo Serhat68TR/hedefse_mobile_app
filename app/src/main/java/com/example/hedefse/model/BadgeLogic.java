@@ -10,19 +10,19 @@ public class BadgeLogic {
     // Pomodoro döngüleri için madalya koşulları
     public static List<String> getPomodoroBadges(int cycleCount) {
         List<String> badges = new ArrayList<>();
-        if (cycleCount >= 10) {
+        if (cycleCount >= 2000) {
             badges.add("Şampiyon");
         }
-        if (cycleCount >= 8) {
+        if (cycleCount >= 1500) {
             badges.add("Elmas");
         }
-        if (cycleCount >= 7) {
+        if (cycleCount >= 300) {
             badges.add("Altın");
         }
-        if (cycleCount >= 6) {
+        if (cycleCount >= 150) {
             badges.add("Gümüş");
         }
-        if (cycleCount >= 5) {
+        if (cycleCount >= 75) {
             badges.add("Bronz");
         }
         return badges;
@@ -31,26 +31,27 @@ public class BadgeLogic {
     // Görev tamamlama için madalya koşulları
     public static List<String> getTaskBadges(int completedTasks, Set<String> awardedBadges) {
         List<String> badges = new ArrayList<>();
-        if (completedTasks >= 5 && !awardedBadges.contains("Şampiyon")) {
+        if (completedTasks >= 500 && !awardedBadges.contains("Şampiyon")) {
             badges.add("Şampiyon");
             awardedBadges.add("Şampiyon");
         }
-        if (completedTasks >= 4 && !awardedBadges.contains("Elmas")) {
+        if (completedTasks >= 300 && !awardedBadges.contains("Elmas")) {
             badges.add("Elmas");
             awardedBadges.add("Elmas");
         }
-        if (completedTasks >= 3 && !awardedBadges.contains("Altın")) {
+        if (completedTasks >= 150 && !awardedBadges.contains("Altın")) {
             badges.add("Altın");
             awardedBadges.add("Altın");
         }
-        if (completedTasks >= 2 && !awardedBadges.contains("Gümüş")) {
+        if (completedTasks >= 50 && !awardedBadges.contains("Gümüş")) {
             badges.add("Gümüş");
             awardedBadges.add("Gümüş");
         }
-        if (completedTasks >= 1 && !awardedBadges.contains("Bronz")) {
+        if (completedTasks >= 30 && !awardedBadges.contains("Bronz")) {
             badges.add("Bronz");
             awardedBadges.add("Bronz");
         }
         return badges;
     }
 }
+
